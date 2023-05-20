@@ -1,0 +1,9 @@
+
+
+1)  For the Outer loop, Count the number of lines.
+
+2)  For the inner loop, Focus ont the column and connect them somehow to the rows.
+
+2)  Print the inside the inner for loop.
+
+4) Ovserbe symentriy (optional setp)
