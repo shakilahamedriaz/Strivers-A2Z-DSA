@@ -545,30 +545,9 @@ void explainExtra() {
 
 
 
-
 int main()
 {
    
-
-   //topics we covered:
-
-    explainPair();
-    explainVector();
-    explainList();
-    explainDeque();
-
-    explainStack();
-    explainQueue();
-    explainPQ();
-
-    explainSet();
-    explainMultiSet();
-    explainUset();
-
-    explainMap();
-    explainMultiMap();
-    com();
-    explainExtra();
 
     return 0;
 }
