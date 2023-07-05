@@ -163,6 +163,62 @@ void explainVector(){
 
 
 
+//-- List 
+
+void explainList(){
+
+    list<int> ls;
+    
+    ls.push_back(2); // {2}
+    ls.emplace_back(4); // {2,4}
+
+    ls.push_front(5);   // {5,2,4}
+    ls.emplace_front(9); // {9,2,4}
+    ls.emplace_front(8); // {8, 9, 2,4}
+
+    //rest functions same as vector
+    //begin, end, rbegin, rend, clear, insert, size, swap
+
+
+}
+
+
+//--Deque
+
+void explainDeque() {
+
+    deque<int> dq;
+
+    dq.push_back(1); // {1}
+    dq.emplace_back(2); // {1,2}
+
+    dq.push_front(4); // {4, 1, 2}
+    dq.emplace_front(3); // {3, 4, 1, 2}
+
+    //delete : pop
+    dq.pop_back();  // {3, 4, 1}
+    dq.pop_front(); // {4, 1}
+
+
+    dq.back();
+    dq.front();
+            
+
+    //rest functions same as vector
+    //begin, end, rbegin, rend, clear, insert, size, swap
+}
+ 
+
+
+
+
+//-- Stake
+//lifo-last in first out
+
+void explainStake() {
+
+    
+}
 
 
 
@@ -171,6 +227,8 @@ int main()
    
     explainPair();
     explainVector();
+    explainList();
+    explainDeque();
 
     return 0;
 }
