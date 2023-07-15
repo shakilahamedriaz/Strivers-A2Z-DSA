@@ -6,7 +6,7 @@ void printNtimes(int i,int n)
 {
     if(i>n) return;
 
-    cout<< "Shakil"<<endl;
+    cout<< "Hard indeed."<<endl;
 
     printNtimes(i+1, n);
 }
