@@ -1,12 +1,12 @@
 #include <iostream>
 using namespace std;
 
-int ans(int number, int arr[], int n)
+int ans(char c, string s, int n)
 {
     int count = 0;
     for (int i = 0; i < n; i++)
     {
-        if (arr[i] == number)
+        if (s[i] == c)
         {
             count++;
         }
@@ -17,25 +17,30 @@ int ans(int number, int arr[], int n)
 int main()
 {
     int n;
-    cout << "Enter the array size: ";
+    cout << "Enter the string size: ";
     cin >> n;
-    int arr[n];
-    cout << "Enter the array elements: ";
-    for (int i = 0; i < n; i++)
+    
+    string s;
+    cout << "Enter the String ";
+    cin >> s;
+
+    int time;
+    cout << "total taken test : ";
+    cin >> time;
+
+    char c; // Move the declaration of 'c' outside the while loop
+    while (time--)
     {
-        cin >> arr[i];
+        cout << "Enter the char to count occurrences: ";
+        cin >> c;
+        int total = ans(c, s, n);
+        cout << "Total number of Frequency :" << c << " is: ";
+        cout << total << endl;
     }
-
-    int number;
-    cout << "Enter the number to count occurrences: ";
-    cin >> number;
-
-    int total = ans(number, arr, n);
-    cout << "Total number of occurrences of " << number << " is: ";
-    cout << total;
 
     return 0;
 }
+
 
 
 //for these problems, time complexity is= [ 0(n)*sizeofarray ]
