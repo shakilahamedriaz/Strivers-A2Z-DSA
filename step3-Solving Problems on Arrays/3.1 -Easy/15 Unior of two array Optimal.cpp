@@ -5,24 +5,18 @@
 using namespace std; 
 
 vector<int> sortedArray(vector<int> a, vector<int> b) {
-    set<int> st;
-    vector<int> Union;
+   
+   int n1=a.size();
+   int n2=b.size();
+   int i=0;
+   int j=0;
+   vector<int>unionArr;
 
-    int n = a.size();
-    int m = b.size();
+//https://youtu.be/wvcQg43_V8U?t=3337
+//current position of the problem 
 
-    for (int i = 0; i < n; i++) {
-        st.insert(a[i]);
-    }
-    for (int i = 0; i < m; i++) {
-        st.insert(b[i]);
-    }
+   return unionArr;
 
-    for (auto it : st) {
-        Union.push_back(it);
-    }
-
-    return Union;
 }
 
 int main() {
