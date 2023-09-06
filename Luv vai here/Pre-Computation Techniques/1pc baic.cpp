@@ -3,7 +3,7 @@ Given T test cases and in each
 test case a number N. Print its factorial
 for each test case % M
 
-Where M=!0^9+7*
+Where M=10^9+7*
 Constrains:
 1<=T <=10^5
 1<=N <=10^5
