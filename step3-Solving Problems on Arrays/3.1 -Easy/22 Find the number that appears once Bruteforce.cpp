@@ -13,7 +13,7 @@ int getSingleElements(vector<int> & arr)
         //find the occurrence using linear search :
         for(int j=0; j<n; j++)
         {
-            if(arr[j]=num)
+            if(arr[j]==num)
             cnt++;
         }
         if(cnt==1) return num;
