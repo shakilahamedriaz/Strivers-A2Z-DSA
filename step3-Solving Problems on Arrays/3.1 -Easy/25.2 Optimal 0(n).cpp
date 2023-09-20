@@ -17,7 +17,7 @@ maximumsubArrSum(vector<int>&arr, int n)
 
 int main()
 {
-    vector<int>arr={-1,2,4,-3,5,2,-5,2};
+    vector<int>arr={ -1};//-1,2,4,-3,5,2,-5,2};
     int n=arr.size();
 
     int ans=maximumsubArrSum(arr,n);
