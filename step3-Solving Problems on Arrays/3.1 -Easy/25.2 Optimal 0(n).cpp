@@ -22,4 +22,5 @@ int main()
 
     int ans=maximumsubArrSum(arr,n);
     cout<< "Maximum sub array sum is : "<<ans<<endl;
+    return 0;
 }

@@ -36,7 +36,7 @@ int getLongestSubarray(vector<int>& a, long long k) {
             preSumMap[sum] = i;
         }
     }
-
+    //it will work for negative values;
     return maxLen;
 }
 
