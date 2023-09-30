@@ -41,3 +41,7 @@ int main()
 
     return 0;
 }
+
+
+//TC= 0(n^2)
+//SC= 0(1)
