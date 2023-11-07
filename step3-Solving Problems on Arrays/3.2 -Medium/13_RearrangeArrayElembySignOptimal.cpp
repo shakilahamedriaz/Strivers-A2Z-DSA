@@ -27,23 +27,32 @@ To maintain relative ordering, 1 must occur before 2, and -4 must occur before -
 using namespace std;
 
 vector<int> reArrangeBySign(vector<int> A, int n)
-{
-    vector<int>positive;
-    vector<int>negative;
 
+{
+    //define an array for storing the ans saperately
+    vector<int> ans(n,0);
+    //positve elements starts from index 0
+    int posIndex = 0;
+    //negative elements starts from index 1
+    int negIndex = 1;
+    
     for(int i=0; i<n; i++)
     {
-        if(A[i]>0) positive.push_back(A[i]);
-        else negative.push_back(A[i]);
+        //fill negative elements in odd indices and inc by 2
+        if(A[i] < 0)
+        {
+            ans[negIndex] = A[i];
+            negIndex+=2;
+        }
+        //fill positive elem in even and ,inc by 2
+        else
+        {
+            ans[posIndex] = A[i];
+            posIndex+=2;
+        }
     }
 
-    for(int i=0; i<n/2; i++)
-    {
-        A[2*i]= positive[i];
-        A[2*i+1]=negative[i];
-    }
-
-    return A;
+    return ans;
 }
 
 int main()
@@ -51,6 +60,7 @@ int main()
     int n=4;
     vector<int> A {1,2,-4,-5};
 
+   
     vector<int> ans= reArrangeBySign(A,n);
 
     for(int i=0; i<n; i++)
