@@ -11,7 +11,7 @@ using namespace std;
 
 int main()
 {
-    int arr[] = {1,3,2};
+    int arr[] = {3,2,1};
     int len= end(arr) - begin(arr);
     //sizeof(arr)/sizeof(arr[0]);
     //arr.size(); for vector.
@@ -23,3 +23,14 @@ int main()
 
     return 0;
 }
+
+/*
+The 3! possible permutations with 3 elements:
+1 2 3
+1 3 2
+2 1 3
+2 3 1
+3 1 2
+3 2 1
+After loop: 1 2 3
+*/
