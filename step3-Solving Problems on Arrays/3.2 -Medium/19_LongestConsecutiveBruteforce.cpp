@@ -21,6 +21,7 @@ Explanation: The longest consecutive subsequence is 5, 6, 7, and 8.
 #include<bits/stdc++.h>
 using namespace std;
 
+
 bool linerSearch(vector<int> &a, int num)
 {
     int n=a.size();
